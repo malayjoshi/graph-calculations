@@ -36,6 +36,7 @@ import type openapi from '../../openapi'
 
   const onResetClick = (event: MouseEvent, resetType: string) => {
     
+
     reset();
   };
 
@@ -125,7 +126,7 @@ import type openapi from '../../openapi'
 	//post request to the server
         const client = createClient<NormalizeOAS<typeof openapi>>({})
       
-      const response = await client['http://localhost:8080/api/v1/flows/calculate'].post({
+      const response = await client['https://dijsktra-sb.onrender.com/api/v1/flows/calculate'].post({
                           json: graph
                       });
         
