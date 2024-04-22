@@ -41,7 +41,7 @@ import type openapi from '../../openapi'
   };
 
   
-  let algos = [{value:'dijsktra',name:'Dijkstra'},{value:'maxflow', name:'MaxFlow (Ford-Fulkerson)'} ];
+  let algos = [{value:'dijsktra',name:'Dijkstra'}, ];
   let selectedAlgo = 'dj';
   let source:string='';
   let target:string='';
